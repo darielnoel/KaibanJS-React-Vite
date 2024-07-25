@@ -5,9 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  agenticjs:
-    specifier: 0.0.14
-    version: 0.0.14(@types/react@18.2.65)(react@18.2.0)(zod@3.23.8)
+  magenticjs:
+    specifier: 0.0.17
+    version: 0.0.17(@types/react@18.2.65)(react@18.2.0)(zod@3.23.8)
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -1089,75 +1089,6 @@ packages:
     hasBin: true
     dev: true
 
-  /agenticjs@0.0.14(@types/react@18.2.65)(react@18.2.0)(zod@3.23.8):
-    resolution: {integrity: sha512-SeirdlKbVvqXELv9xrMAIiEqqA5gifMhBiMakFDJMbNivwwZMyENelXcANWwBqUTD9SJsaMX46ZyxhiZ0swtqw==}
-    engines: {node: '>=12.0.0'}
-    dependencies:
-      '@langchain/anthropic': 0.2.3(langchain@0.2.5)
-      '@langchain/google-genai': 0.0.21(langchain@0.2.5)(zod@3.23.8)
-      '@langchain/mistralai': 0.0.25(langchain@0.2.5)
-      langchain: 0.2.5
-      uuid: 10.0.0
-      zustand: 4.5.2(@types/react@18.2.65)(react@18.2.0)
-    transitivePeerDependencies:
-      - '@aws-sdk/client-s3'
-      - '@aws-sdk/client-sagemaker-runtime'
-      - '@aws-sdk/client-sfn'
-      - '@aws-sdk/credential-provider-node'
-      - '@azure/storage-blob'
-      - '@browserbasehq/sdk'
-      - '@gomomento/sdk'
-      - '@gomomento/sdk-core'
-      - '@gomomento/sdk-web'
-      - '@mendable/firecrawl-js'
-      - '@notionhq/client'
-      - '@pinecone-database/pinecone'
-      - '@supabase/supabase-js'
-      - '@types/react'
-      - '@vercel/kv'
-      - '@xata.io/client'
-      - apify-client
-      - assemblyai
-      - axios
-      - cheerio
-      - chromadb
-      - convex
-      - couchbase
-      - d3-dsv
-      - encoding
-      - epub2
-      - faiss-node
-      - fast-xml-parser
-      - handlebars
-      - html-to-text
-      - ignore
-      - immer
-      - ioredis
-      - jsdom
-      - mammoth
-      - mongodb
-      - node-llama-cpp
-      - notion-to-md
-      - officeparser
-      - openai
-      - pdf-parse
-      - peggy
-      - playwright
-      - puppeteer
-      - pyodide
-      - react
-      - redis
-      - sonix-speech-recognition
-      - srt-parser-2
-      - typeorm
-      - weaviate-ts-client
-      - web-auth-library
-      - ws
-      - youtube-transcript
-      - youtubei.js
-      - zod
-    dev: false
-
   /agentkeepalive@4.5.0:
     resolution: {integrity: sha512-5GG/5IbQQpC9FpkRGsSvZI5QYeSCzlJHdpBQntCsuTOxhKD8lqKhrleg2Yi7yvMIf82Ycmmqln9U8V9qwEiJew==}
     engines: {node: '>= 8.0.0'}
@@ -2104,6 +2035,75 @@ packages:
     dependencies:
       yallist: 4.0.0
     dev: true
+
+  /magenticjs@0.0.17(@types/react@18.2.65)(react@18.2.0)(zod@3.23.8):
+    resolution: {integrity: sha512-RBr+KIxc2ss38uW36x9AAqULAtmq0wHoxN1AaiYFh/5KSzovZxRRtu3LrE7MK3hzFRP3Jkx+tk53GiZrkdZESw==}
+    engines: {node: '>=12.0.0'}
+    dependencies:
+      '@langchain/anthropic': 0.2.3(langchain@0.2.5)
+      '@langchain/google-genai': 0.0.21(langchain@0.2.5)(zod@3.23.8)
+      '@langchain/mistralai': 0.0.25(langchain@0.2.5)
+      langchain: 0.2.5
+      uuid: 10.0.0
+      zustand: 4.5.2(@types/react@18.2.65)(react@18.2.0)
+    transitivePeerDependencies:
+      - '@aws-sdk/client-s3'
+      - '@aws-sdk/client-sagemaker-runtime'
+      - '@aws-sdk/client-sfn'
+      - '@aws-sdk/credential-provider-node'
+      - '@azure/storage-blob'
+      - '@browserbasehq/sdk'
+      - '@gomomento/sdk'
+      - '@gomomento/sdk-core'
+      - '@gomomento/sdk-web'
+      - '@mendable/firecrawl-js'
+      - '@notionhq/client'
+      - '@pinecone-database/pinecone'
+      - '@supabase/supabase-js'
+      - '@types/react'
+      - '@vercel/kv'
+      - '@xata.io/client'
+      - apify-client
+      - assemblyai
+      - axios
+      - cheerio
+      - chromadb
+      - convex
+      - couchbase
+      - d3-dsv
+      - encoding
+      - epub2
+      - faiss-node
+      - fast-xml-parser
+      - handlebars
+      - html-to-text
+      - ignore
+      - immer
+      - ioredis
+      - jsdom
+      - mammoth
+      - mongodb
+      - node-llama-cpp
+      - notion-to-md
+      - officeparser
+      - openai
+      - pdf-parse
+      - peggy
+      - playwright
+      - puppeteer
+      - pyodide
+      - react
+      - redis
+      - sonix-speech-recognition
+      - srt-parser-2
+      - typeorm
+      - weaviate-ts-client
+      - web-auth-library
+      - ws
+      - youtube-transcript
+      - youtubei.js
+      - zod
+    dev: false
 
   /merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}

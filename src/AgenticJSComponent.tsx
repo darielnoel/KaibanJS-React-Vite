@@ -89,14 +89,6 @@ const initAgentic = async () => {
     }, // Environment variables for the team
   });
 
-  console.log(import.meta.env.VITE_OPENAI_API_KEY);
-  const unsubscribe = team.subscribeToChanges(
-    (updatedFields) => {
-      console.log("Workflow Status Updated:", updatedFields);
-    },
-    ["teamWorkflowStatus"],
-  );
-
   // ──── Start Team Workflow ───────────────────────────────────────
   //
   // Begins the predefined team process, producing the final result.
