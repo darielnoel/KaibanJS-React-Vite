@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import { Agent, Task, Team } from "agenticjs";
+import { Agent, Task, Team } from "kaibanjs";
 
 const initAgentic = async () => {
   // NodeJS
-  // const { Agent, Task, Team } = require('agenticjs');
+  // const { Agent, Task, Team } = require('kaibanjs');
 
   // ╔══════════════════════════════════════════════════════╗
-  // ║ How to Use AgenticJS:                                ║
+  // ║ How to Use KaibanJS:                                ║
   // ║ 1. Define your Agents with specific roles and goals  ║
   // ║ 2. Define the Tasks each Agent will perform          ║
   // ║ 3. Create the Team and assign Agents and their Tasks ║
@@ -96,7 +96,7 @@ const initAgentic = async () => {
   return await team.start();
 };
 
-const AgenticJSComponent = () => {
+const KaibanJSComponent = () => {
   const [result, setResult] = useState("Initializing...");
 
   useEffect(() => {
@@ -105,16 +105,16 @@ const AgenticJSComponent = () => {
         setResult(JSON.stringify(res, null, 2));
       })
       .catch((err) => {
-        setResult("Error initializing AgenticJS: " + err.message);
+        setResult("Error initializing KaibanJS: " + err.message);
       });
   }, []);
 
   return (
     <div className="bg-gray-100 p-8 rounded shadow">
-      <h1 className="text-xl font-bold">AgenticJS Initialization Result</h1>
+      <h1 className="text-xl font-bold">KaibanJS Initialization Result</h1>
       <p>{result}</p>
     </div>
   );
 };
 
-export default AgenticJSComponent;
+export default KaibanJSComponent;
